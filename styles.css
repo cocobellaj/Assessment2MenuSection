@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    background-color: black;
+    background-size: 100%;
+    margin: 60px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color:#fffff3;
+    padding-bottom: 20px;
+  }
+ 
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 3px solid #ef2917;
+  }
+ 
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+    font-size: 50px;
+  }
+ 
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+    font-size: 50px;
+  }
+.menuheaders {
+    border-bottom: 3px solid #fffff3;
+    border-top: 3px solid #fffff3;
+    border-left: 3px solid #fffff3;
+    border-right: 3px solid #fffff3;
+    padding-bottom: 10px;
+}
+
+.menuheaders h1 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+.menuheaders p  {
+    font-weight: medium;
+    color:white;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    max-width: 600px;
+    font-size:x-large;
+}
+
+.container {
+    display: flex;
+  }
+  
+  .text {
+    flex: 1;
+    width: 80%;
+    float: left;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    padding-top: 15px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 900px) { 
+    .container {
+      flex-direction: column;
+    }
+  
+    .image {
+       padding-top: 20px;
+       justify-content: center;
+    }
+  }
